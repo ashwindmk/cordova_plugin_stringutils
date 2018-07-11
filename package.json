@@ -1,5 +1,5 @@
 {
-  "name": "stringutils",
+  "name": "plugin-stringutils",
   "version": "1.0.0",
   "description": "Ionic utility plugin for string operations",
   "main": "index.js",
