@@ -2,6 +2,7 @@ package cordova.plugin.stringutils;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
+import org.apache.cordova.PluginResult;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,7 +31,7 @@ public class Stringutils extends CordovaPlugin {
 
     private void isBlank(String input, CallbackContext callbackContext) {
         try {
-            callbackContext.success(StringUtils.isBlank(input));
+            callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, StringUtils.isBlank(input)));
         } catch (Exception e) {
             callbackContext.error("Exception occured: " + e);
         }
@@ -38,7 +39,7 @@ public class Stringutils extends CordovaPlugin {
 
     private void isEmpty(String input, CallbackContext callbackContext) {
         try {
-            callbackContext.success(StringUtils.isEmpty(input));
+            callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, StringUtils.isEmpty(input)));
         } catch (Exception e) {
             callbackContext.error("Exception occured: " + e);
         }
