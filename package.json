@@ -1,0 +1,19 @@
+{
+  "name": "stringutils",
+  "version": "1.0.0",
+  "description": "Ionic utility plugin for string operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwindmk/cordova_plugin_stringutils.git"
+  },
+  "author": "Ashwin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwindmk/cordova_plugin_stringutils/issues"
+  },
+  "homepage": "https://github.com/ashwindmk/cordova_plugin_stringutils#readme"
+}
