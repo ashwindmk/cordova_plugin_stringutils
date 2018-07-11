@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    id="cordova-plugin-stringutils" 
+    version="1.0.0">
+
+    <name>Stringutils</name>
+
+    <js-module name="Stringutils" src="www/Stringutils.js">
+        <clobbers target="Stringutils" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="Stringutils">
+                <param name="ios-package" value="Stringutils" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/Stringutils.m" />
+        <framework src="IOSStringUtils" type="podspec" spec="~> 0.1.1" />
+    </platform>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Stringutils">
+                <param name="android-package" value="cordova.plugin.stringutils.Stringutils" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/Stringutils.java" target-dir="src/cordova/plugin/stringutils" />
+        <framework custom="true" src="src/android/stringutils-sdk.gradle" type="gradleReference" />
+    </platform>
+
+</plugin>
