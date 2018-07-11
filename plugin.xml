@@ -17,7 +17,7 @@
                 <param name="ios-package" value="Stringutils" />
             </feature>
         </config-file>
-        <source-file src="src/ios/Stringutils.swift" />
+        <source-file src="src/ios/Stringutils.m" />
         <framework src="IOSStringUtils" type="podspec" spec="~> 0.1.1" />
     </platform>
 
