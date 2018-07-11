@@ -8,6 +8,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.util.Log;
+import ashwin.libraries.com.androidstringutils.StringUtils;
 
 public class Stringutils extends CordovaPlugin {
 

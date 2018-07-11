@@ -1,5 +1,6 @@
 
 #import <Cordova/CDV.h>
+#import "IOSStringUtils"
 
 @interface Stringutils : CDVPlugin {
   // Member variables go here.
