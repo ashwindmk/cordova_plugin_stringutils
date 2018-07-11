@@ -22,7 +22,7 @@ public class Stringutils extends CordovaPlugin {
             return true;
         }
         if (action.equals("isEmpty")) {
-            String input = args.getJSONObject(0).getString("input");
+            String input = args.getString(0);
             this.isEmpty(input, callbackContext);
             return true;
         }
